@@ -33,3 +33,33 @@ Projeyi yerel makinenizde (local) çalıştırmak için aşağıdaki adımları 
 git clone [https://github.com/efsunboz16/LSTM-ile-Enerji-T-ketimi-Tahmini.git](https://github.com/efsunboz16/LSTM-ile-Enerji-T-ketimi-Tahmini.git)
 cd LSTM-ile-Enerji-T-ketimi-Tahmini
 
+Sanal ortam oluşturun 
+python -m venv venv
+# Windows için:
+.\venv\Scripts\activate
+# MacOS/Linux için:
+source venv/bin/activate
+
+Gerekli kütüphaneleri indirin
+pip install -r requirements.txt
+
+Çalıştırma sırası
+python clean_dataset.py
+python data_preparation.py
+python lstm_train.py
+python lstm_test.py
+python forecat_future.py
+
+🛠️ Kullanılan Teknolojiler
+Dil: Python 3.x
+
+Makine Öğrenmesi & Derin Öğrenme: TensorFlow, Keras, Scikit-Learn
+
+Veri Manipülasyonu: Pandas, NumPy
+
+Görselleştirme: Matplotlib
+
+👤 Geliştirici
+Efsun
+
+GitHub: @efsunboz16
