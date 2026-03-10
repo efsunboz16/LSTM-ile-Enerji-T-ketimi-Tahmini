@@ -1,0 +1,25 @@
+# Python önbellek dosyaları
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Sanal ortam (Virtual Environment)
+venv/
+env/
+.env
+
+# Veri setleri (Çok yer kaplar)
+*.csv
+
+# Numpy dizileri (İşlenmiş ağır veri matrisleri)
+*.npy
+
+# Eğitilmiş modeller ve scaler dosyaları
+*.h5
+*.save
+*.pkl
+
+# IDE ve İşletim Sistemi dosyaları
+.vscode/
+.idea/
+.DS_Store

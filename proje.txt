@@ -1,0 +1,38 @@
+```
+
+
+LSTM ile Enerji Tüketimi Tahmini
+
+
+Problem tanımı:
+-Enerji tüketimi tahmini, elektrik üretim planlama, şebeke dengeleme, tüketim öngörülmesi ve faturalama optimizasyonu 
+-Geçmiş tüketim verilerine bakarak gelecek tüketim verilerini tahmin etmek
+-Amaç : geçmiş enerji tüketim tahmini verisinden ileriye dönük enerji tüketim tahmini ve enerji planlaması 
+
+
+Data:
+-https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption
+
+Kullanılan Araçlar ve Teknolojiler:
+
+-LSTM : Tensorflow/keras
+    -RNN türüdür,
+    -Gradyan sönmesi problemine çözüm olarak geliştirildi,
+    -Unutma(forget) kapısı, girdi(input), çıktı(output) kapısı
+
+
+
+Plan / Programlama:
+    -Veri yükleme ve temizleme,
+    -Yeniden örnekleme(resampling),
+    -Kayan pencere(sliding window),
+    -Veri ölçekleme(scaling),
+    -LSTM modelimizin eğitimi,
+    -performans analizi gerçekleştirme,
+    -gelecek tahmini
+
+
+İnstall libraries:
+    -pip install pandas numpy matplotlib scikit-learn tensorflow
+
+```
